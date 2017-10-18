@@ -1,0 +1,87 @@
+body{
+  background:black;
+}
+header{
+  color:white;
+  
+}
+.wrapper{
+  diaplay:grid;
+  grid-template-columns:1fr 1fr;
+  
+}
+ul{
+    cursor:pointer;
+   transition: 0.3s ;
+  background:black;
+  padding:11px;
+  font-size:20px;
+  border-bottom:2px solid white;
+ 
+}
+
+a{
+  text-decoration:none;
+  text-decoration-color:red;
+  cursor:pointer;
+}
+
+/* mouse over link */
+a:visited {
+    color: green;
+}
+a:link {
+    color: white;
+}
+a:hover {
+    color: hotpink;
+}
+
+/* selected link */
+
+
+// @keyframes example {
+//     from {background-color: white;
+      
+//      color:black;}
+//     to {background-color: black;
+//   color:white;}
+// }
+li{
+
+}
+input{
+  padding:10px;
+  font-weight:bold;
+  border-radius:20px;
+  display:block;
+  width:80%;
+  position:relative;
+  left:8%;
+
+}
+button{
+  
+   margin: 20px auto;
+  font-size: 1.0rem;
+  padding:10px;
+  
+  
+  background-color: #009ac9;
+  border: 1px solid transparent;
+  color: #ffffff;
+  font-weight: bold;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+button:hover{
+   background-color: #ffffff;
+  color: #009ac9;
+  border-color: #009ac9;
+}
+.middle{
+  display:flex;
+}

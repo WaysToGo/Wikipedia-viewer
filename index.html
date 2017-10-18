@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
+  <script src="app.js"></script>
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Wikipedia viewer</title>
+</head>
+
+<body ng-app="myApp" ng-controller="wikiController">
+  <header>
+    <h1 align="center">Wikipedia Search </h1>
+  </header>
+  <main>
+    <input type="text" placeholder="Search" ng-model="input" />
+    <div class="middle">
+      <button ng-click="random()">random article</button>
+      <button ng-click="search()">Search</button>
+    </div>
+    <div id="results" class="wrapper">
+      <ul ng-repeat="data in result">
+        <a href={{data.link}} target="_blank">
+          <li>{{data.name}}</li>
+          <li>{{data.title}}</li>
+        </a>
+      </ul>
+    </div>
+  </main>
+</body>
+
+</html>
